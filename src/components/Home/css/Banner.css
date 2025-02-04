@@ -1,0 +1,26 @@
+/* banner npm package carosul overide caarosul css */
+
+
+
+.carousel .thumbs-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Center-align the thumbnails */
+  margin-top: 10px;
+}
+
+.carousel .thumbs {
+  display: flex;
+  justify-content: center !important;
+  /* Make sure it's centered */
+  gap: 10px;
+  margin-top: 20px;
+  /* Add spacing between thumbnails */
+}
+
+@media screen and (max-width:576px) {
+.carousel {
+    height: 300px;
+  }
+}
+
