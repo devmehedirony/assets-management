@@ -182,13 +182,13 @@ const NavBar = () => {
             </ul>
           </div>
           {
-            isManager && <img className="h-14 rounded-2xl" src={user.photoURL} alt="" />
+            isManager && <img className="h-12 rounded-2xl" src={user.photoURL} alt="" />
           }
   
           
           
             {
-              isEmployee && <img className="h-10  rounded-2xl" src={user.photoURL} />
+              isEmployee && <img className="h-12  rounded-2xl" src={user.photoURL} />
             }
       
           
@@ -222,7 +222,7 @@ const NavBar = () => {
           
           {/* dark mode switch */}
           <label className="toggle text-base-content ml-4">
-            <input type="checkbox" value="synthwave" className="theme-controller" onChange={handleToogle}/>
+            <input type="checkbox" value="synthwave" className="theme-controller h-10" onChange={handleToogle}/>
 
               <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></g></svg>
 

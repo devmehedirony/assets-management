@@ -131,7 +131,7 @@ const MyRequestedAssets = () => {
               {
                 asset.status === 'pending' ? <button onClick={() => handleDelete(asset)} className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">Cancel Request</button> : <>
                   {
-                    asset.status === 'Approved' && <Link to={`/printDocument/${asset.productId}`}><button className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">Print</button></Link>
+                    asset.status === 'Approved' && <Link to={`/dashboard/printDocument/${asset.productId}`}><button className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">Print</button></Link>
                   }
                   {
                     asset.productType === 'Returnable' && <button disabled={asset.status === "returned "} onClick={()=>handleReturn(asset)} className="bg-[#8264FF] text-white btn flex items-center gap-x-2 px-4 py-2 cursor-pointer">Return</button>

@@ -1,15 +1,19 @@
-import { FaBars, FaHome, FaList, FaUsers } from "react-icons/fa";
+import {  FaHome, FaList, FaUsers } from "react-icons/fa";
 import { FaMoneyBillWheat } from "react-icons/fa6";
 import { IoIosAdd, IoMdGitPullRequest } from "react-icons/io";
 import { MdOutlineRequestQuote } from "react-icons/md";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useManager } from "../hooks/useManager";
 import { GiTeamIdea } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
+import PieChart from "./manager/PieChart";
+import SectionTitle from "../shared/SectionTitle";
 
 
 const DashBoard = () => {
   const [isManager] = useManager()
+  const location = useLocation()
+  const isDashBoardHome = location.pathname === "/dashboard"
   return (
     <div className="flex min-h-screen">
 
@@ -131,6 +135,14 @@ const DashBoard = () => {
       </div>
 
       <div className="flex-1">
+      
+        {
+          isDashBoardHome && <>
+            <SectionTitle heading={'WELCOME TO OUR DESHBOARD'}></SectionTitle>
+            {isManager && <PieChart></PieChart>}
+          </>
+        }
+         
         <Outlet></Outlet>
       </div>
     </div>

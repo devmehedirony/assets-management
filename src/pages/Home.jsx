@@ -48,9 +48,7 @@ const Home = () => {
       {
         isManager && <MostRequest></MostRequest>
       }
-      {
-        isManager && <PieChart></PieChart>
-      }
+      
 
       {
         isManager && <LimitedStock></LimitedStock>

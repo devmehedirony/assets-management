@@ -9,7 +9,7 @@ const InvestMent = () => {
   return (
     <div>
      
-      <section className="pb-16 pt-2  text-center">
+      <section className=" pt-2  text-center">
         <SectionTitle heading={'Investment Team'}></SectionTitle>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <div className=" shadow-lg rounded-xl overflow-hidden text-center p-6">

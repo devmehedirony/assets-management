@@ -130,7 +130,7 @@ const AssetList = () => {
             <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Quantity: </span> {asset.productQuantity}</p>
             <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">date: </span> {asset.date}</p>
             <div className="flex items-center justify-center gap-x-4 mt-4 text-white">
-              <Link to={`/assets-list/update/${asset._id}`}><button className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">  Update <MdOutlineBrowserUpdated className="text-xl" /></button></Link>
+              <Link to={`/dashboard/update/${asset._id}`}><button className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">  Update <MdOutlineBrowserUpdated className="text-xl" /></button></Link>
 
               <button onClick={() => handleDelete(asset)} className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">  Delete <RxCross2 className="text-xl" /></button>
             </div>
