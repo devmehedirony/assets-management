@@ -1,13 +1,12 @@
 import React from 'react';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { MdDateRange } from 'react-icons/md';
+import SectionTitle from '../../shared/SectionTitle';
 
 const Notice = () => {
   return (
-    <div className=" py-8 px-4 w-10/12 mx-auto my-20 rounded-2xl shadow-lg">
-      <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2 justify-center">
-        <AiOutlineInfoCircle className="text-blue-500" /> Important Notice Form Company
-      </h2>
+    <div className=" py-8 px-4 w-10/12 mx-auto mb-20 rounded-2xl shadow-lg">
+      <SectionTitle heading={'Important Notice Form Company'}></SectionTitle>
       <div className="mt-6 space-y-6">
         {/* Notice 1 */}
         <div className=" rounded-lg shadow p-6 text-center">

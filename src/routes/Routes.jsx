@@ -20,6 +20,7 @@ import PrivateRoutes from "./PrivateRoute";
 import DashBoard from "../pages/DashBoard";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import Error from "../pages/Error";
 
 
 
@@ -121,7 +122,11 @@ export const router = createBrowserRouter([
   {
     path: '/about',
     element: <About></About>
-  }
+  },
+  {
+    path: '*',
+    element: <Error />,
+  },
     
   
 ]);

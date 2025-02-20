@@ -1,8 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import About from "../components/Home/About";
 import Hero from "../components/Home/Hero";
 import Notice from "../components/Home/Notice";
-import { useAuth } from "../hooks/useAuth";
 import { useEmployee } from "../hooks/useEmployee";
 import { useManager } from "../hooks/useManager";
 import RecentRequests from "./Employee/RecentRequests";
@@ -20,7 +18,7 @@ import Package from "../components/Home/Package"
 const Home = () => {
   const [isManager] = useManager()
   const [isEmployee] = useEmployee()
-  const {user} = useAuth()
+  
   return (
     <div>
       <Helmet>
