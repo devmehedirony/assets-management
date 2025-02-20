@@ -30,15 +30,42 @@ const Home = () => {
 
       <Hero></Hero>
       <Package></Package>
-      <About></About>
-   
+
+
+
       {
-        user ? <></> :
-          <>
-           
-        
-        </>
-     }
+        isEmployee && <RequestPanding></RequestPanding>
+      }
+      {
+        isEmployee && <RecentRequests></RecentRequests>
+      }
+
+      {
+        isEmployee && <Notice></Notice>
+      }
+
+      {
+        isManager && <PendingAllRequests></PendingAllRequests>
+      }
+      {
+        isManager && <MostRequest></MostRequest>
+      }
+      {
+        isManager && <PieChart></PieChart>
+      }
+
+      {
+        isManager && <LimitedStock></LimitedStock>
+      }
+      {
+        isManager && <InvestMent></InvestMent>
+      }
+      {
+        isManager && <ResearchSection></ResearchSection>
+      }
+      
+   
+     
     </div>
   );
 };

@@ -18,6 +18,8 @@ import MyTeam from "../pages/Employee/MyTeam";
 import Profile from "../pages/Profile";
 import PrivateRoutes from "./PrivateRoute";
 import DashBoard from "../pages/DashBoard";
+import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 
 
@@ -97,6 +99,7 @@ export const router = createBrowserRouter([
         path: 'my-team',
         element: <PrivateRoutes><MyTeam></MyTeam></PrivateRoutes>
       },
+      
      
 
     ]
@@ -110,6 +113,14 @@ export const router = createBrowserRouter([
   {
     path: 'payment',
     element: <Payment></Payment>
+  },
+  {
+    path: '/contact',
+    element: <Contact></Contact>
+  },
+  {
+    path: '/about',
+    element: <About></About>
   }
     
   

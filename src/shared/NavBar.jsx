@@ -179,7 +179,7 @@ const NavBar = () => {
           
           {
             user ? <></> : <div className="flex items-center gap-2 ">
-              <img src={logo} className="lg:h-16 h-10 rounded-2xl" alt="" />
+              <img src={logo} className="lg:h-14 h-10 rounded-2xl" alt="" />
               <h2 className="xl:text-3xl text-xl font-bold hidden md:block text-white">Smart Assets</h2>
             </div>
          }
@@ -202,7 +202,7 @@ const NavBar = () => {
               <button onClick={handleLogOut} className="bg-white text-[#8264FF] px-4 font-bold xl:py-6 xl:px-14  cursor-pointer">Logout</button>
               </div> :
   
-                <Link to='/login'> <button className="bg-[#8264FF] text-white py-5 xl:py-6 px-14  cursor-pointer">Login</button></Link>
+              <Link to='/login'> <button className="bg-white text-[#8264FF] py-5 xl:py-6 px-14  cursor-pointer">Login</button></Link>
             }
          
         </div>
