@@ -91,7 +91,7 @@ const MyRequestedAssets = () => {
     queryClient.setQueryData(["myRequested" , user?.email], filterdData);
   }
   return (
-    <div className="min-h-screen w-11/12 lg:w-10/12 mx-auto mt-10 mb-20">
+    <div className="min-h-screen w-11/12 lg:w-10/12 mx-auto mt-10 mb-20 ">
       <Helmet>
         <title>My Requests</title>
       </Helmet>
@@ -120,13 +120,13 @@ const MyRequestedAssets = () => {
 
         {
           myRequested.length > 0 && myRequested.map((asset, idx) => <div key={idx} className="block w-96 p-6  shadow-xl space-y-2">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{asset.productName}</h5>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Type: </span> {asset.productType}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Request Date: </span> {asset.requestedDate}</p>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight  ">{asset.productName}</h5>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Type: </span> {asset.productType}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Request Date: </span> {asset.requestedDate}</p>
             {
-              asset?.approvalDate && <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Approval Date: </span> {asset?.approvalDate}</p>
+              asset?.approvalDate && <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Approval Date: </span> {asset?.approvalDate}</p>
            }
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Request Status: </span> {asset.status}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Request Status: </span> {asset.status}</p>
             <div className="flex items-center justify-center gap-x-4 mt-4 text-white">
               {
                 asset.status === 'pending' ? <button onClick={() => handleDelete(asset)} className="bg-[#8264FF] flex items-center gap-x-2 px-4 py-2 cursor-pointer">Cancel Request</button> : <>

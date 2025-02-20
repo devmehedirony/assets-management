@@ -83,14 +83,14 @@ const JoinManager = () => {
         <form className='xl:w-lg flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
           <fieldset className="fieldset text-base">
             <legend className="fieldset-legend gap-0">your name<span className='text-red-500'>*</span></legend>
-            <input type="text" {...register("name", { required: true })} className="input w-72 md:w-96 py-6 border-none bg-gray-400 text-white" placeholder="Enter Your Name" />
+            <input type="text" {...register("name", { required: true })} className="input w-72 md:w-96 py-6 border-non text-white" placeholder="Enter Your Name" />
             {errors.name && <span className='text-red-500 mt-1'>This field is required</span>}
           </fieldset>
          
           {/* company name */}
           <fieldset className="fieldset">
             <legend className="fieldset-legend gap-0 text-base">Company name<span className='text-red-500'>*</span></legend>
-            <input type="text" {...register("company_name", { required: true })} className="input  w-72 md:w-96 py-6 border-none bg-gray-400 text-white" placeholder="Enter Mail" />
+            <input type="text" {...register("company_name", { required: true })} className="input  w-72 md:w-96 py-6 border-non text-white" placeholder="Enter Mail" />
             {errors.company_name && <span className='text-red-500 mt-1'>This field is required</span>}
           </fieldset>
 
@@ -105,13 +105,13 @@ const JoinManager = () => {
 
           <fieldset className="fieldset">
             <legend className="fieldset-legend gap-0 text-base">your email<span className='text-red-500'>*</span></legend>
-            <input type="text" {...register("email", { required: true })} className="input  w-72 md:w-96 py-6 border-none bg-gray-400 text-white" placeholder="Enter Mail" />
+            <input type="text" {...register("email", { required: true })} className="input  w-72 md:w-96 py-6 border-non text-white" placeholder="Enter Mail" />
             {errors.email && <span className='text-red-500 mt-1'>This field is required</span>}
           </fieldset>
 
           <fieldset className="fieldset">
             <legend className="fieldset-legend gap-0 text-base">Password<span className='text-red-500'>*</span></legend>
-            <input {...register("password", { required: true, minLength: 6, maxLength: 20, pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/ })} type="text" className="input  w-72 md:w-96 py-6 border-none bg-gray-400 text-white" placeholder="Enter Password" />
+            <input {...register("password", { required: true, minLength: 6, maxLength: 20, pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/ })} type="text" className="input  w-72 md:w-96 py-6 border-non text-white" placeholder="Enter Password" />
             {errors.password && <span className='text-red-500 mt-1'>This field is required</span>}
             {errors.password?.type === "pattern" && (
               <p className='text-red-500 mt-2 font-medium'>Minimun 6 langth Upcase,LowCase,useNum</p>
@@ -121,7 +121,7 @@ const JoinManager = () => {
 
           <fieldset className="fieldset">
             <legend className="fieldset-legend gap-0 text-base">Date Of Birth<span className='text-red-500'>*</span></legend>
-            <input type="date" {...register("dateofBirth", { required: true })} className="input  w-72 md:w-96 py-6 border-none bg-gray-400 text-white" />
+            <input type="date" {...register("dateofBirth", { required: true })} className="input  w-72 md:w-96 py-6 border-non text-white" />
             {errors.dateofBirth && <span className='text-red-500 mt-1'>This field is required</span>}
           </fieldset>
 
@@ -135,18 +135,18 @@ const JoinManager = () => {
                 <div className="modal-box md:w-11/12 w-64 md:max-w-3xl">
                 <div className='flex items-center flex-col md:flex-row justify-center gap-6'>
                    <div className="block  p-6   shadow-xl space-y-2">
-                               <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 ">$5</h5>
-                      <p className="font-normal text-gray-700 text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 5</span></p>
+                               <h5 className="mb-2 text-2xl text-center font-bold tracking-tight  ">$5</h5>
+                      <p className="font-normal  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 5</span></p>
                     </div>
                     
                     <div className="block  p-6   shadow-xl space-y-2">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900  text-center">$8</h5>
-                      <p className="font-normal text-gray-700 text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 10</span></p>
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight   text-center">$8</h5>
+                      <p className="font-normal  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 10</span></p>
                     </div>
 
                     <div className="block  p-6   shadow-xl space-y-2">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">$15</h5>
-                      <p className="font-normal text-gray-700  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 20</span></p>
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight  text-center">$15</h5>
+                      <p className="font-normal   text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 20</span></p>
                     </div>
                 </div>
 

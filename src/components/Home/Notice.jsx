@@ -10,14 +10,14 @@ const Notice = () => {
       <div className="mt-6 space-y-6">
         {/* Notice 1 */}
         <div className=" rounded-lg shadow p-6 text-center">
-          <h3 className="text-lg font-semibold text-gray-900">
+          <h3 className="text-lg font-semibold ">
             Maintenance Downtime
           </h3>
-          <p className="text-gray-700 mt-2">
+          <p className=" mt-2">
             Our servers will be down for maintenance on January 30th from 12 AM to 6 AM. Please plan accordingly.
           </p>
-          <div className="flex items-center gap-2 text-sm text-gray-500 mt-4 justify-center">
-            <MdDateRange className="text-gray-400" />
+          <div className="flex items-center gap-2 text-sm  mt-4 justify-center">
+            <MdDateRange className="" />
             <span>January 29, 2025</span>
           </div>
         </div>
@@ -27,25 +27,25 @@ const Notice = () => {
           <h3 className="text-lg font-semibold text-gray-900">
             New Feature Release
           </h3>
-          <p className="text-gray-700 mt-2">
+          <p className=" mt-2">
             We’re excited to announce a new dashboard update available starting February 1st. Stay tuned for details!
           </p>
-          <div className="flex items-center gap-2 text-sm text-gray-500 mt-4 justify-center">
-            <MdDateRange className="text-gray-400" />
+          <div className="flex items-center gap-2 text-sm  mt-4 justify-center">
+            <MdDateRange className="" />
             <span>January 28, 2025</span>
           </div>
         </div>
 
         {/* Notice 3 */}
         <div className=" rounded-lg shadow p-6 text-center ">
-          <h3 className="text-lg font-semibold text-gray-900">
+          <h3 className="text-lg font-semibold">
             Holiday Announcement
           </h3>
-          <p className="text-gray-700 mt-2">
+          <p className=" mt-2">
             The office will remain closed on February 14th for Valentine’s Day. We hope you enjoy the holiday!
           </p>
-          <div className="flex items-center gap-2 text-sm text-gray-500 mt-4 justify-center">
-            <MdDateRange className="text-gray-400" />
+          <div className="flex items-center gap-2 text-sm  mt-4 justify-center">
+            <MdDateRange  />
             <span>January 28, 2025</span>
           </div>
         </div>

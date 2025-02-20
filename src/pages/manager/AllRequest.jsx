@@ -71,13 +71,13 @@ const AllRequest = () => {
 
         {
           allRequests.length > 0 && allRequests.map((asset, idx) => <div key={idx} className="block w-96 p-6  shadow-xl space-y-2">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{asset.productName}</h5>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Type: </span> {asset.productType}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Requester Mail: </span> {asset.requesterMail}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Requester Name: </span> {asset.requesterName}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Requested: </span> {asset.requestedDate}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Note: </span> {asset?.additionalNote}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Status: </span> {asset?.status}</p>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight  ">{asset.productName}</h5>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Type: </span> {asset.productType}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Requester Mail: </span> {asset.requesterMail}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Requester Name: </span> {asset.requesterName}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Requested: </span> {asset.requestedDate}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Note: </span> {asset?.additionalNote}</p>
+            <p className="font-normal  "><span className="text-lg text-[#3085d6] font-bold">Status: </span> {asset?.status}</p>
             <div className="flex items-center justify-center gap-x-4 mt-4 text-white">
               
               {

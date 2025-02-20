@@ -100,9 +100,9 @@ const RequestAssets = () => {
 
         {
           allAssets.length > 0 && allAssets.map((asset, idx) => <div key={idx} className="block w-96 p-6  shadow-xl space-y-2">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{asset.productName}</h5>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Type: </span> {asset.productType}</p>
-            <p className="font-normal text-gray-700 "><span className="text-lg text-[#3085d6] font-bold">Availability: </span> {asset.availability}</p>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight  dark:text-white">{asset.productName}</h5>
+            <p className="font-normal "><span className="text-lg text-[#3085d6] font-bold">Type: </span> {asset.productType}</p>
+            <p className="font-normal "><span className="text-lg text-[#3085d6] font-bold">Availability: </span> {asset.availability}</p>
             <div className="flex items-center justify-center gap-x-4 mt-4 text-white">
 
               {/* Open the modal using document.getElementById('ID').showModal() method */}

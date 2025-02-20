@@ -101,18 +101,18 @@ const AddEmployee = () => {
 
                 <div className='flex items-center flex-col md:flex-row justify-center gap-6'>
                   <div className="block  p-6   shadow-xl space-y-2">
-                    <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 ">$5</h5>
-                    <p className="font-normal text-gray-700 text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 5</span></p>
+                    <h5 className="mb-2 text-2xl text-center font-bold tracking-tight  ">$5</h5>
+                    <p className="font-normal  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 5</span></p>
                   </div>
 
                   <div className="block  p-6   shadow-xl space-y-2">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900  text-center">$8</h5>
-                    <p className="font-normal text-gray-700 text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 10</span></p>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight   text-center">$8</h5>
+                    <p className="font-normal  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 10</span></p>
                   </div>
 
                   <div className="block  p-6   shadow-xl space-y-2">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">$15</h5>
-                    <p className="font-normal text-gray-700  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 20</span></p>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight  text-center">$15</h5>
+                    <p className="font-normal   text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 20</span></p>
                   </div>
                 </div>
 
@@ -188,18 +188,18 @@ const AddEmployee = () => {
                           
                           <div className='flex items-center justify-center gap-6'>
                             <div className="block  p-6   shadow-xl space-y-2">
-                              <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 ">$5</h5>
-                              <p className="font-normal text-gray-700 text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 5</span></p>
+                              <h5 className="mb-2 text-2xl text-center font-bold tracking-tight  ">$5</h5>
+                              <p className="font-normal  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 5</span></p>
                             </div>
 
                             <div className="block  p-6   shadow-xl space-y-2">
-                              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900  text-center">$8</h5>
-                              <p className="font-normal text-gray-700 text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 10</span></p>
+                              <h5 className="mb-2 text-2xl font-bold tracking-tight   text-center">$8</h5>
+                              <p className="font-normal  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 10</span></p>
                             </div>
 
                             <div className="block  p-6   shadow-xl space-y-2">
-                              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">$15</h5>
-                              <p className="font-normal text-gray-700  text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 20</span></p>
+                              <h5 className="mb-2 text-2xl font-bold tracking-tight  text-center">$15</h5>
+                              <p className="font-normal   text-xl">Members <span className="text-lg text-[#3085d6] font-bold"> 20</span></p>
                             </div>
                           </div>
                         

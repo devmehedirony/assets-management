@@ -7,22 +7,22 @@ const Contact = () => {
       <div>
         <NavBar></NavBar>
       </div>
-      <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-2xl">
+      <div className="max-w-4xl mx-auto p-6  shadow-lg rounded-2xl">
         <h2 className="text-3xl font-bold text-center text-[#8264FF] mb-6">Contact Us</h2>
   
         {/* Contact Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="flex items-center gap-4">
             <FaPhoneAlt className="text-blue-500 text-2xl" />
-            <p className="text-gray-700">+880 123***322*</p>
+            <p>+880 123***322*</p>
           </div>
           <div className="flex items-center gap-4">
             <FaEnvelope className="text-red-500 text-2xl" />
-            <p className="text-gray-700">support@example.com</p>
+            <p>support@example.com</p>
           </div>
           <div className="flex items-center gap-4">
             <FaMapMarkerAlt className="text-green-500 text-2xl" />
-            <p className="text-gray-700">Dhaka, Bangladesh</p>
+            <p >Dhaka, Bangladesh</p>
           </div>
         </div>
   

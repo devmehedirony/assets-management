@@ -3,6 +3,7 @@ import logo from '../assets/logo.png'
 import { useAuth } from "../hooks/useAuth";
 import { useManager } from "../hooks/useManager";
 import { useEmployee } from "../hooks/useEmployee"
+import { useEffect, useState } from "react";
 
 
 
@@ -11,6 +12,20 @@ const NavBar = () => {
   const navigate = useNavigate()
   const [isManager] = useManager()
   const [isEmployee] = useEmployee()
+  const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
+  const handleToogle = e => {
+    if (e.target.checked) {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+    const localTheme = localStorage.getItem('theme')
+    document.querySelector('html').setAttribute('data-theme', localTheme)
+  }, [theme])
   
   
  
@@ -203,7 +218,17 @@ const NavBar = () => {
               </div> :
   
               <Link to='/login'> <button className="bg-white text-[#8264FF] py-5 xl:py-6 px-14  cursor-pointer">Login</button></Link>
-            }
+          }
+          
+          {/* dark mode switch */}
+          <label className="toggle text-base-content ml-4">
+            <input type="checkbox" value="synthwave" className="theme-controller" onChange={handleToogle}/>
+
+              <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></g></svg>
+
+              <svg aria-label="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></g></svg>
+
+          </label>
          
         </div>
       </div>
