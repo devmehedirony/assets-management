@@ -44,7 +44,7 @@ const MostRequest = () => {
     <div>
       <SectionTitle heading={'most request'}></SectionTitle>
 
-       <div className="flex justify-center items-center gap-10 my-20 flex-wrap">
+       <div className="flex justify-center items-center gap-10 my-20 flex-wrap 2xl:w-8/12 2xl:mx-auto">
             
                     {
           mostRequests.length > 0 && mostRequests.map((asset, idx) => <div key={idx} className="block w-96 p-6  shadow-xl space-y-2">

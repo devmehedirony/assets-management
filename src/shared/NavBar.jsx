@@ -22,198 +22,84 @@ const NavBar = () => {
     })
   }
 
-  const links = (<>
+  const links = (
+    
+    <>
+      
+    <li className="text-lg  ">
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
+            : 'text-base text-white'
+        }
+        to="/"
+      >
+        Home
+      </NavLink>
+    </li>
 
-      {/* employee navigation */}
-      {isEmployee && <>
+      
+      {
+      user ? <>
+        
+        
 
-        <li className="text-lg cursor-pointer">
+        <li className="text-lg  ">
           <NavLink
             className={({ isActive }) =>
               isActive
-              ? 'bg-white text-[#8264FF]  lg:p-6  text-lg  font-medium rounded-none'
+                ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
                 : 'text-base text-white'
             }
-            to="/"
+              to="/dashboard"
           >
-            Home
+            Dashboard
           </NavLink>
         </li>
 
-        <li className="text-lg">
+        <li className="text-lg  ">
           <NavLink
             className={({ isActive }) =>
               isActive
-              ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
-              : 'text-base text-white'
+                ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
+                : 'text-base text-white'
             }
-            to="/my-requested-assets"
+            to="/about"
           >
-            My Assets
+            About
           </NavLink>
         </li>
 
-        <li className="text-lg">
+        <li className="text-lg  ">
           <NavLink
             className={({ isActive }) =>
               isActive
-              ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
-              : 'text-base text-white'
-            }
-            to="/my-team"
-          >
-            My Team
-          </NavLink>
-        </li>
-
-        <li className="text-lg">
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-              ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
-              : 'text-base text-white'
-            }
-            to="/request-for-assets"
-          >
-            Request for an Asset
-
-          </NavLink>
-        </li>
-
-        <li className="text-lg">
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-              ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none' 
-              : 'text-base text-white'
+                ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
+                : 'text-base text-white'
             }
             to="/profile"
           >
             Profile
-
           </NavLink>
         </li>
 
-      </>}
-
-
-      {/* manager navigation */}
-      {
-        isManager && <><li className="text-lg">
+        <li className="text-lg  ">
           <NavLink
             className={({ isActive }) =>
               isActive
-              ? 'bg-white text-[#8264FF] px-3 py-2 xl:p-6 xl:text-lg  font-medium rounded-none'
-              : 'text-base text-white'
-            }
-            to="/"
-          >
-            Home
-          </NavLink>
-        </li>
-
-          <li className="text-lg">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                ? 'bg-white text-[#8264FF] px-3 py-2 xl:p-6 xl:text-lg  font-medium rounded-none'
-                : 'text-base text-white'
-              }
-              to="/asset-list"
-            >
-              Asset List
-            </NavLink>
-          </li>
-
-          <li className="text-lg">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                ? 'bg-white text-[#8264FF]  px-3 py-2 xl:p-6 xl:text-lg  font-medium rounded-none'
-                : 'text-base text-white'
-              }
-              to="/add-assets"
-            >
-              Add an Asset
-
-            </NavLink>
-          </li>
-
-          <li className="text-lg">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                ? 'bg-white text-[#8264FF] px-3 py-2 xl:p-6 xl:text-lg  font-medium rounded-none'
-                : 'text-base text-white'
-              }
-              to="/all-request"
-            >
-              All Requests
-
-
-            </NavLink>
-          </li>
-
-          <li className="text-lg">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                ? 'bg-white text-[#8264FF]  px-3 py-2 xl:p-6 xl:text-lg  font-medium rounded-none'
-                : 'text-base text-white'
-              }
-              to="/my-employees"
-            >
-              My Employee List
-
-
-            </NavLink>
-          </li>
-
-          <li className="text-lg">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                ? 'bg-white text-[#8264FF] px-3 py-2 xl:p-6 xl:text-lg  font-medium rounded-none'
-                : 'text-base text-white'
-              }
-              to="/add-employees"
-            >
-              Add an Employee
-
-            </NavLink>
-          </li>
-
-          <li className="text-lg">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                ? 'bg-white text-[#8264FF] px-3 py-2 xl:p-6 xl:text-lg text-base  font-medium rounded-none'
-                : 'text-base text-white'
-              }
-              to="/profile"
-            >
-              Profile
-
-            </NavLink>
-          </li>
-        </>
-      }
-
-      {
-        user ? <></> : <>
-
-        <li className="text-lg  ">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
                 ? 'bg-white text-[#8264FF]  lg:p-6 text-lg  font-medium rounded-none'
                 : 'text-base text-white'
-              }
-              to="/"
-            >
-              Home
-            </NavLink>
-          </li>
+            }
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+        </li>
+      
+      </> : <>
+
+        
 
           <li className="text-lg">
             <NavLink
@@ -281,19 +167,19 @@ const NavBar = () => {
             </ul>
           </div>
           {
-            isManager && <img className="h-14" src={user.photoURL} alt="" />
+            isManager && <img className="h-14 rounded-2xl" src={user.photoURL} alt="" />
           }
   
           
           
             {
-              isEmployee && <img className="h-10  " src={user.photoURL} />
+              isEmployee && <img className="h-10  rounded-2xl" src={user.photoURL} />
             }
       
           
           {
             user ? <></> : <div className="flex items-center gap-2 ">
-              <img src={logo} className="lg:h-16 h-10" alt="" />
+              <img src={logo} className="lg:h-16 h-10 rounded-2xl" alt="" />
               <h2 className="xl:text-3xl text-xl font-bold hidden md:block text-white">Smart Assets</h2>
             </div>
          }

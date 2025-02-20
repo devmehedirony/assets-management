@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import moment from "moment";
 import Swal from "sweetalert2";
 import { useAuth } from "../../hooks/useAuth";
-import { useAxiosPublic } from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { Helmet } from "react-helmet-async";
 import { useAxiosSecure } from "../../hooks/useAxiosSecure";

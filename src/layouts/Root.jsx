@@ -13,7 +13,9 @@ const Root = () => {
       {conditionalRendaring || <NavBar></NavBar>}
      
      
-       <Outlet></Outlet>
+     
+        <Outlet></Outlet>
+      
      
       
       {conditionalRendaring || <Footer></Footer>}

@@ -17,6 +17,7 @@ import MyEmployee from "../pages/manager/MyEmployee";
 import MyTeam from "../pages/Employee/MyTeam";
 import Profile from "../pages/Profile";
 import PrivateRoutes from "./PrivateRoute";
+import DashBoard from "../pages/DashBoard";
 
 
 
@@ -42,7 +43,14 @@ export const router = createBrowserRouter([
         path: 'login',
         element: <Login></Login>
       },
-
+      
+    ]
+  },
+  {
+    path: 'dashboard',
+    element: <DashBoard></DashBoard>,
+    children: [
+    
       // manager routes
       {
         path: 'add-assets',
@@ -53,9 +61,9 @@ export const router = createBrowserRouter([
         element: <PrivateRoutes><AssetList></AssetList></PrivateRoutes>
       },
       {
-        path: 'assets-list/update/:id',
+        path: 'update/:id',
         element: <PrivateRoutes><UpdateAssets></UpdateAssets></PrivateRoutes>
-        
+
       },
       {
         path: 'add-employees',
@@ -65,7 +73,7 @@ export const router = createBrowserRouter([
         path: 'my-employees',
         element: <PrivateRoutes><MyEmployee></MyEmployee></PrivateRoutes>
       },
-   
+
 
       // employee
       {
@@ -84,18 +92,21 @@ export const router = createBrowserRouter([
         path: 'printDocument/:id',
         element: <PrivateRoutes><Print></Print></PrivateRoutes>
       },
-     
+
       {
         path: 'my-team',
         element: <PrivateRoutes><MyTeam></MyTeam></PrivateRoutes>
       },
-      {
-        path: '/profile',
-        element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
-      }
+     
 
     ]
   },
+
+  {
+    path: '/profile',
+    element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
+  },
+
   {
     path: 'payment',
     element: <Payment></Payment>
