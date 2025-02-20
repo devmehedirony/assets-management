@@ -15,9 +15,9 @@ const DashBoard = () => {
   const location = useLocation()
   const isDashBoardHome = location.pathname === "/dashboard"
   return (
-    <div className="flex min-h-screen">
+    <div className="flex flex-col lg:flex-row gap-4 min-h-screen">
 
-      <div className=" px-6 py-4 w-72  bg-[#8264FF]">
+      <div className=" px-6 py-4 lg:w-72 w-full   bg-[#8264FF]">
         <div className="mt-6 mb-8 text-center"> <Link className="text-xl text-white"><h2 className='font-Cinzel text-2xl font-bold'>ASSETS</h2> <h2 className='font-Cinzel text-lg  tracking-[.47em]'>Management</h2></Link></div>
 
         <ul className="space-y-2 font-medium">

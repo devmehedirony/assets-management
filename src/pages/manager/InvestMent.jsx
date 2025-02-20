@@ -11,7 +11,7 @@ const InvestMent = () => {
      
       <section className=" pt-2  text-center">
         <SectionTitle heading={'Investment Team'}></SectionTitle>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 w-11/12  grid-cols-1 gap-6  mx-auto">
           <div className=" shadow-lg rounded-xl overflow-hidden text-center p-6">
             <img
               src={img1}
